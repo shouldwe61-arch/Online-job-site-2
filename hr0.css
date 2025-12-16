@@ -57,30 +57,6 @@ body{
 .company h1{margin:0;font-size:1.05rem;color:var(--blue)}
 .company .tagline{margin:0;font-size:0.85rem;color:var(--red);font-weight:600}
 
-/* Contact Nav */
-.contact-nav {
-  display: flex;
-  flex-direction: column; /* عمودي */
-  gap: 0.6rem;
-}
-.contact-person {
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
-}
-.contact-nav a{
-  padding:0.45rem 0.7rem;
-  border-radius:8px;
-  text-decoration:none;
-  color:white;
-  background:var(--blue);
-  font-weight:600;
-}
-.contact-nav .phone-btn{
-  background:transparent;
-  color:var(--blue);
-  border:1px solid var(--blue);
-}
 
 /* Hero Section */
 .hero{
@@ -91,7 +67,59 @@ body{
   margin:1rem 0;
 }
 .hero-image{
-  width:100%;
+ /* Contact Nav */
+.contact-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.contact-person {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  text-align: center;
+}
+
+/* زرار واتساب واتصال */
+.whatsapp-btn,
+.phone-btn {
+  display: flex;
+  flex-direction: column;   /* الكلمة فوق الرقم */
+  align-items: center;
+  justify-content: center;
+
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+/* النص */
+.whatsapp-btn .label,
+.phone-btn .label {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.whatsapp-btn .number,
+.phone-btn .number {
+  font-size: 0.8rem;
+  margin-top: 4px;
+}
+
+/* الألوان */
+.whatsapp-btn {
+  background: #25d366;
+  color: #fff;
+}
+
+.phone-btn {
+  background: transparent;
+  color: var(--blue);
+  border: 1px solid var(--blue);
+} width:100%;
   height:420px;
   object-fit:cover;
   object-position:center 35%;
@@ -233,4 +261,13 @@ body{
   .logo{height:46px}
   .hero-image{height:320px}
   }
+@media (max-width:900px){
+  .contact-nav {
+    width: 100%;
+  }
 
+  .whatsapp-btn,
+  .phone-btn {
+    width: 100%;
+  }
+                 }
