@@ -84,11 +84,22 @@ body{
 
 .jobs{background:white;margin:1rem 0;padding:1.2rem;border-radius:12px;box-shadow:var(--shadow)}
 .jobs h3{margin-top:0}
-.job-list{
+..job-list{
   display:block;
+  width:100%;
+  margin-top:0.6rem;
 }
-.job{background:#fff;padding:0.9rem;border-radius:10px;border:1px solid #eef2f6}
-.job h4{margin:0 0 0.45rem 0;color:var(--blue)}
+
+.job-list article{
+  width:100%;
+}
+
+.job-list h4{
+  width:100%;
+  margin:0;
+  color:var(--blue);
+  line-height:1.8;
+}
 .cta-note{margin-top:1rem;color:#475569;font-size:0.95rem}
 
 .contact{margin:1rem 0;padding:1.2rem;border-radius:12px;box-shadow:var(--shadow);background:white}
