@@ -46,6 +46,7 @@ body {
   top: 0;
   z-index: 40;
   height: auto;
+  transition: all 0.3s ease;
 }
 
 .header-inner {
@@ -62,7 +63,7 @@ body {
 }
 
 .logo {
-  height: 60px; /* أصغر حجم */
+  height: 60px;
   width: auto;
   transition: height 0.3s ease;
 }
@@ -156,6 +157,7 @@ body {
   object-position: center 35%;
   display: block;
   filter: brightness(0.7);
+  transition: all 0.3s ease;
 }
 
 .hero-overlay {
