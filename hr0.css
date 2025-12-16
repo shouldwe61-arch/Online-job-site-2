@@ -84,7 +84,11 @@ body{
 
 .jobs{background:white;margin:1rem 0;padding:1.2rem;border-radius:12px;box-shadow:var(--shadow)}
 .jobs h3{margin-top:0}
-.job-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:0.6rem}
+.job-list{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:1rem;
+}
 .job{background:#fff;padding:0.9rem;border-radius:10px;border:1px solid #eef2f6}
 .job h4{margin:0 0 0.45rem 0;color:var(--blue)}
 .cta-note{margin-top:1rem;color:#475569;font-size:0.95rem}
