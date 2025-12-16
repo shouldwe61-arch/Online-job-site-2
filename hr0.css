@@ -84,10 +84,9 @@ body{
 
 
 .jobs{
-  width:100vw;
-  max-width:100vw;
-  margin-right: calc(-50vw + 50%);
-  margin-left: calc(-50vw + 50%);
+  width:100%;
+  max-width:100%;
+}
   border-radius:0;
 }
 .jobs h3{margin-top:0}
